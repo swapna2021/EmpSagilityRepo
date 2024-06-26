@@ -1,0 +1,26 @@
+package com.sagility;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class DemoClass {
+
+	public static void main(String[] args) {
+		
+//		Object obj=new Object();
+//		System.out.println(obj.hashCode());
+		
+		
+		Set set=new HashSet();
+		
+		set.add("Swapna");
+		set.add(56);
+		set.add(true);
+		
+		Iterator itr=set.iterator();
+		while(itr.hasNext())
+			System.out.println(itr.next());
+	}
+
+}

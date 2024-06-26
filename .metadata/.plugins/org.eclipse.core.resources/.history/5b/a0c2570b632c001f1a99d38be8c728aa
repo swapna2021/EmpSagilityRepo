@@ -1,0 +1,22 @@
+package com.sagility;
+
+import java.util.ArrayList;
+
+public class DemoClass {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> alist=new ArrayList<Integer>() ;
+		alist.add(67);
+		alist.add(69);//resizable array,Insertion order
+		
+		System.out.println(alist);
+		
+		//duplicates are allowed
+		alist.add(67);
+		System.out.println(alist);
+		
+
+	}
+
+}

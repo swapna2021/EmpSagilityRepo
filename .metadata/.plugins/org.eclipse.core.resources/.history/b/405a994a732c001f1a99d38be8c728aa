@@ -1,0 +1,30 @@
+package com.sagility;
+
+public class OuterClass {
+	
+	private String outerName;
+	
+	class InnerClass{
+		
+		private String innerName;
+		
+		public void display() {
+			System.out.println("inner display");
+		}
+		
+	}
+	
+	
+	public void printName() {
+		System.out.println("outer class name:"+outerName);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		OuterClass oc=new OuterClass();
+		oc.printName();
+		
+	}
+
+}

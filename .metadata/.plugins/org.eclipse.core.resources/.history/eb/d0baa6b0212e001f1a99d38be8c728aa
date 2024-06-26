@@ -1,0 +1,29 @@
+package com.sagility;
+
+import java.util.ArrayList;
+
+public class CustomerStream {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Customer> clist=new ArrayList<Customer>();
+		Customer c1=new Customer("swapna",123,"hyderabad");
+		Customer c2=new Customer("swathi",124,"Chennai");
+		Customer c3=new Customer("Preethi",223,"Delhi");
+		Customer c4=new Customer("Mona",13,"hyderabad");
+		Customer c5=new Customer("Priya",113,"hyderabad");
+		
+		clist.add(c1);
+		clist.add(c2);
+		clist.add(c3);
+		clist.add(c4);
+		clist.add(c5);
+		
+		
+		clist.stream()
+		.filter(c->c.getCity().equals("hyderabad"))
+		.forEach(c->System.out.println(c));
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.sagility;
+
+
+interface MyInterface{
+	public void sayHello();
+}
+
+
+public class DemoClass implements MyInterface {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+	@Override
+	public void sayHello() {
+		System.out.println("hello");
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+	<context:property-placeholder location="data.properties"/>
+	<context:annotation-config></context:annotation-config>
+
+  	 <bean name="emp" class="springcoreprj.SpringCorePrj.Employee">
+  		<!-- <constructor-arg name="name" value="${Employee.name}"></constructor-arg>
+  		<constructor-arg name="id" value="${Employee.id}"></constructor-arg>
+  		<constructor-arg name="sal" value="${Employee.sal}"></constructor-arg> -->
+  		<!-- <constructor-arg name="address" ref="address"></constructor-arg> -->	
+  	
+  	</bean>
+  	
+  <!-- 	<bean name="emp1" class="springcoreprj.SpringCorePrj.Employee">
+  	
+  		<constructor-arg name="name" value="Amit"></constructor-arg>
+  		<constructor-arg name="id" value="124"></constructor-arg>
+  		<constructor-arg name="sal" value="80000"></constructor-arg>
+  	
+  	</bean> --> 
+  	
+  <!-- 	<bean name="emp2" class="springcoreprj.SpringCorePrj.Employee" >
+  		<property name="name" value="swathi"></property>
+  		<property name="id" value="345"></property>
+  		<property name="sal" value="90000"></property>
+  		<property name="address" ref="address"></property>
+  	</bean> -->
+  	
+  	
+  	 <bean name="address" class="springcoreprj.SpringCorePrj.Address" > 
+  		<!-- <property name="city" value="Hyderabad"></property>
+  		<property name="state" value="Telangana"></property>
+  		<property name="pin" value="500092"></property> -->
+  	
+  	</bean> 
+</beans>

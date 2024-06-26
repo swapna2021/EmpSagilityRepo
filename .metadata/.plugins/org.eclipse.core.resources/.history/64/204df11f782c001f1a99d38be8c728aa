@@ -1,0 +1,8 @@
+package com.sagility;
+
+public class FinalClass {
+	
+	private String name;
+	private int id;
+
+}

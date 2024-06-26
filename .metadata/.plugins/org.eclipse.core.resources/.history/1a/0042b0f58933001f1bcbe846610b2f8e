@@ -1,0 +1,23 @@
+package com.sagility.entities;
+
+import java.util.List;
+
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Department {
+	
+	private int deptId;
+	private String deptName;
+	private String city;
+	@OneToMany(mappedBy = "dept")
+	private List<Employee> empList;
+	
+
+}

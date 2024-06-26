@@ -1,0 +1,9 @@
+package com.sagility;
+
+public class DemoOnStaticClass {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

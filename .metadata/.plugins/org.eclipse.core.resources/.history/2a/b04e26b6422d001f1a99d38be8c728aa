@@ -1,0 +1,19 @@
+package com.sagility;
+
+import java.util.HashMap;
+
+public class DemoOnMap {
+
+	public static void main(String[] args) {
+	
+		HashMap<Integer, String> nameMap=new HashMap<Integer, String>();
+		nameMap.put(23,"swapna");
+		nameMap.put(12, "amit");
+		nameMap.put(45, "Anitha");
+		
+		System.out.println(nameMap);
+		
+
+	}
+
+}

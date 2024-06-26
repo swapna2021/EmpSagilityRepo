@@ -1,0 +1,21 @@
+package com.sagility;
+
+
+ interface SayInterface{
+	 public void printName();
+ }
+public class DemoOnMethodReference {
+	
+	
+	public static void sayHello() {
+		System.out.println("Hello");
+	}
+
+	public static void main(String[] args) {
+		
+		
+		SayInterface si=DemoOnMethodReference::sayHello;
+		si.printName();
+	}
+
+}

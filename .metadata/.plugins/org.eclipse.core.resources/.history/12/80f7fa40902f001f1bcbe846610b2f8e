@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		<!-- <bean name="customer" class="springcoreprj.SpringCorePrj.Customer">
+			<constructor-arg name="name" value="Swapna"></constructor-arg>
+			<constructor-arg name="id" value="123"></constructor-arg>
+			<constructor-arg name="mobile" value="6282614948"></constructor-arg>
+			
+		</bean> -->
+		
+	 <bean name="address" class="springcoreprj.SpringCorePrj.Address" > 
+  		<property name="city" value="Hyderabad"></property>
+  		<property name="state" value="Telangana"></property>
+  		<property name="pin" value="500092"></property>
+  	
+  		</bean> 
+		
+		<bean name="ord" class="springcoreprj.SpringCorePrj.Order" autowire="byType">
+			<property name="orderId" value="2345"></property>
+			<property name="orderDate" value="21/06/24"></property>
+			<property name="itemList">
+				<list>
+					<value>Mobile</value>
+					<value>Laptop</value>
+					<value>Bottle</value>
+					<value>Bag</value>
+				</list>
+			</property> 
+			<property name="orderId" value="4567"></property>
+			<property name="orderDate" value="23/05/24"></property>
+			<property name="itemList">
+			
+				<list>
+					<value>Mobile</value>
+					<value>Laptop</value>
+					<value>Bottle</value>
+					<value>Bag</value>
+				</list>
+			</property>
+			
+		</bean>
+		
+
+</beans>

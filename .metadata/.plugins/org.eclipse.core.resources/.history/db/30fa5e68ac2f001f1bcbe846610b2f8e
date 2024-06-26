@@ -1,0 +1,22 @@
+package com.sagility;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.sagility.bean.Hello;
+import com.sagility.config.HelloConfig;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ApplicationContext context=new AnnotationConfigApplicationContext(HelloConfig.class);
+        Hello h=(Hello)context.getBean("hello");
+        h.sayHello()
+       
+    }
+}

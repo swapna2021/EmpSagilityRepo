@@ -1,0 +1,5 @@
+package com.sagility.bean;
+
+public class User {
+
+}

@@ -1,0 +1,20 @@
+package com.sagility;
+
+public class Class1 implements Interface1{
+
+	@Override
+	public void sayHello() {
+		System.out.println("Helloooo");
+		
+	}
+
+	@Override
+	public void printName() {
+		System.out.println(name);
+	
+		
+	}
+	
+	
+
+}

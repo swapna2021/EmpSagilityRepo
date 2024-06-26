@@ -1,0 +1,14 @@
+package com.sagility;
+
+//abstract class do not containg instances
+public abstract class User {
+	
+	String name;
+	int id;
+	
+	
+	public  abstract void printDetails() ;
+	
+	public abstract void acceptDetails() ;
+
+}

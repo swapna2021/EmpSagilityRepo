@@ -1,0 +1,5 @@
+package com.sagility.repository;
+
+public interface EmpRepository {
+
+}

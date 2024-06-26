@@ -1,0 +1,28 @@
+package com.sagility;
+
+//an interface having atmost one abstract method is known as funtional interface
+
+@FunctionalInterface
+interface MyInterface{
+	public void sayHello();//abstract
+	
+	
+}
+
+
+public class DemoClass implements MyInterface {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+	@Override
+	public void sayHello() {
+		System.out.println("hello");
+		
+	}
+
+}

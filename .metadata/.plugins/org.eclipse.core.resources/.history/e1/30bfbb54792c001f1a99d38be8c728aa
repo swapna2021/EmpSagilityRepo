@@ -1,0 +1,23 @@
+package com.sagility;
+
+public class MyClass extends FinalClass {
+	
+	
+	private String mobileNum;
+
+	public MyClass(String name, int id, String mobileNum) {
+		super(name, id);
+		this.mobileNum = mobileNum;
+	}
+
+	public MyClass() {
+		super();
+	}
+	
+	
+	@Override
+	public void printDetails() {
+		System.out.println(name+"  "+id+" "+mobileNum);
+	}
+
+}

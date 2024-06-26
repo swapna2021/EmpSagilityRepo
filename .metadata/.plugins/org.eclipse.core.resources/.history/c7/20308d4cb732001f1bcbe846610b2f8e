@@ -1,0 +1,5 @@
+package com.sagility.service;
+
+public interface EmpServiceInterface {
+
+}

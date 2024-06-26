@@ -1,0 +1,5 @@
+package com.sagility.entities;
+
+public class Department {
+
+}

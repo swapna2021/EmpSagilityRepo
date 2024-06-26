@@ -1,0 +1,35 @@
+package com.sagility;
+
+public class DemoOnStaticClass {
+	
+	//static blocks are executed by JVM
+	//static blocks will be executed first
+	//static main method
+	//static methods called inside main method
+	static {
+		System.out.println("My first static block");
+		
+	}
+	
+	static {
+		System.out.println("block2");
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("in the main method");
+		
+		StaticClass sc=new StaticClass();
+		sc.setName("swapna");
+		System.out.println(sc.getName());
+		sc.setAge(42);
+		sc.
+		
+	}
+	
+	
+	static {
+		System.out.println("block3");
+	}
+
+}

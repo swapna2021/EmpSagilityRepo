@@ -1,0 +1,10 @@
+package com.sagility;
+
+
+public  class StaticClass {
+	
+	static class  InnerClass{
+		
+	}
+
+}

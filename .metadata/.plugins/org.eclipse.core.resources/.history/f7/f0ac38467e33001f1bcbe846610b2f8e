@@ -1,0 +1,5 @@
+package com.sagility.exception;
+
+public class NoSuchIdPresentException extends Exception{
+
+}

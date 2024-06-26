@@ -1,0 +1,18 @@
+package com.sagility;
+
+import java.util.TreeSet;
+
+public class DemoOnTreeSet {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Integer> ts=new TreeSet<Integer>();
+		ts.add(56);
+		ts.add(23);
+		ts.add(67);
+		ts.add(9);
+		
+
+	}
+
+}

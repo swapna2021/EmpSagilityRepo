@@ -1,0 +1,17 @@
+package com.sagility.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.sagility.bean.Hello;
+
+@Configuration
+public class HelloConfig {
+	
+	
+	public Hello getHelloBean() {
+		return new Hello();
+	}
+	
+	
+
+}

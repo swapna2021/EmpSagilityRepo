@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Mon Jun 24 11:49:50 IST 2024
+org.eclipse.jst.j2ee.server\:/binary\:/Users/swapnam/.m2/repository/org/apache/tomcat/tomcat-jasper/9.0.71/tomcat-jasper-9.0.71.jar=WEB-INF/lib/tomcat-jasper-9.0.71.jar
+org.eclipse.jst.j2ee.server\:/binary\:/Users/swapnam/.m2/repository/org/springframework/spring-web/6.1.10/spring-web-6.1.10.jar=WEB-INF/lib/spring-web-6.1.10.jar
+org.eclipse.jst.j2ee.server\:/binary\:/Users/swapnam/.m2/repository/org/springframework/spring-web/6.0.21/spring-web-6.0.21.jar=WEB-INF/lib/spring-web-6.0.21.jar
+org.eclipse.jst.j2ee.server\:/binary\:/Users/swapnam/.m2/repository/org/apache/tomcat/tomcat-jasper-el/9.0.71/tomcat-jasper-el-9.0.71.jar=WEB-INF/lib/tomcat-jasper-el-9.0.71.jar

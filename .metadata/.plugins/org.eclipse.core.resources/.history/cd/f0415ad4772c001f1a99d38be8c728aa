@@ -1,0 +1,14 @@
+package com.sagility;
+
+public class Person {
+	
+	private String name;
+	private String mobileNum;
+	private class MyAddress{
+		private String hno;
+		private String city;
+		private String state;
+
+	}
+
+}

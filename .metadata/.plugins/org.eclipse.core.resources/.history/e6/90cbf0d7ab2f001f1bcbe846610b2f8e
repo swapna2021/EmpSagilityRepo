@@ -1,0 +1,5 @@
+package com.sagility.config;
+
+public class HelloConfig {
+
+}

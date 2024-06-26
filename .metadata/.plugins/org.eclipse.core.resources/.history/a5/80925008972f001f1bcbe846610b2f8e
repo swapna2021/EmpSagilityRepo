@@ -1,0 +1,25 @@
+package springcoreprj.SpringCorePrj;
+
+import org.springframework.beans.factory.annotation.Value;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+@ToString
+public class Address {
+	
+	@Value("${Hyd}")
+	private String city;
+	@Value("${Telangana}")
+	private String state;
+	@Value("${500692}")
+	private String pin;
+
+}

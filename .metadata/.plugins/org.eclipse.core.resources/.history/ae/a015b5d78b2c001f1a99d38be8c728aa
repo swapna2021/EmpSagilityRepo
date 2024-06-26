@@ -1,0 +1,30 @@
+package com.sagility;
+
+public class DemoOnException {
+
+	public static void main(String[] args) {
+		
+		int a=5,b=0;
+		int arr[]= {1,0,3,4,0,6,8};
+		try {
+			
+		for(int i=0;i<arr.length;i++)
+		System.out.println(a/arr[i]);
+		}
+		catch (ArithmeticException e) {
+			e.printStackTrace();
+		}
+		
+		catch(RuntimeException re) {
+			re.printStackTrace();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		System.out.println("End of the main");
+
+	}
+
+}

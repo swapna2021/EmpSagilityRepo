@@ -1,0 +1,14 @@
+package com.sagility;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		Class1 c1=new Class1();
+		c1.sayHello();//Hellooo
+		Class2 c2=new Class2();
+		c2.sayHello();//heloo swapna
+
+	}
+
+}

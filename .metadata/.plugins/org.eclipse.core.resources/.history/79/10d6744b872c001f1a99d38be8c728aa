@@ -1,0 +1,13 @@
+package com.sagility;
+
+public class DemoClass {
+	
+	public static void sayHello() {
+		
+		String name="Amit";//strings ar immutable
+		
+		System.out.println(name.hashCode());
+		name="swapna";
+	}
+
+}

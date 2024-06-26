@@ -1,0 +1,11 @@
+package com.sagility.entities;
+
+
+public class Department {
+	
+	private int deptId;
+	private String deptName;
+	private String city;
+	
+
+}

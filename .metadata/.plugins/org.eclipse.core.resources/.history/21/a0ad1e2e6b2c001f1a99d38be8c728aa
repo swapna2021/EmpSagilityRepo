@@ -1,0 +1,25 @@
+package com.sagility;
+
+
+public  class StaticClass {
+	
+	private static String name;
+	
+	public static void display() {
+		System.out.println("display method");
+	}
+	
+	public void printName() {
+		System.out.println(name);
+	}
+	
+	static class  InnerClass{
+		
+	}
+	
+	static {
+		
+		System.out.println("static block");
+	}
+
+}

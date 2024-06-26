@@ -1,0 +1,13 @@
+package com.sagility;
+
+public class DemoClass {
+
+	public static void main(String[] args) {
+	
+		System.out.println("DemoClass");
+		
+		Student st=new Student();
+		st.collegeName=
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.sagility;
+
+
+interface MyInterface{
+	public void sayHello();
+}
+
+
+public class DemoClass {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

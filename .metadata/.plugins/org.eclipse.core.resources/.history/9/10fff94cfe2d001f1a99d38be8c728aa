@@ -1,0 +1,5 @@
+package com.sagility;
+
+public interface Interface2 {
+	public void sayHello();
+}

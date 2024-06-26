@@ -1,0 +1,26 @@
+package springcoreprj.SpringCorePrj;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration//configuratio inf will be there
+@PropertySource("classpath:data.properties")
+public class EmpConfig {
+	
+	
+	@Bean
+	public Employee getEmployee() {
+		Employee e=new Employee("swapna",123,50000,getAddress());
+		return e;	
+	}
+	
+	@Bean
+	public Address getAddress() {
+		Address address=new Address("hyd", "telangana", "506009");
+		return address;
+		
+	}
+	
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  	<bean name="emp" class="springcoreprj.SpringCorePrj.Employee">
+  	
+  		<constructor-arg name="name" value="swapna"></constructor-arg>
+  		<constructor-arg name="id" value="123"></constructor-arg>
+  		<constructor-arg name="sal" value="50000"></constructor-arg>
+  	
+  	</bean>
+  	
+  	<bean name="emp1" class="springcoreprj.SpringCorePrj.Employee">
+  	
+  		<constructor-arg name="name" value="Amit"></constructor-arg>
+  		<constructor-arg name="id" value="124"></constructor-arg>
+  		<constructor-arg name="sal" value="80000"></constructor-arg>
+  	
+  	</bean>
+
+</beans>

@@ -1,0 +1,28 @@
+package com.sagility.entities;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+public class Employee {
+	
+	private String empName;
+	@Id
+	private int empId;
+	private double empSal;
+	private String mobile;
+	private String email;
+	
+
+}

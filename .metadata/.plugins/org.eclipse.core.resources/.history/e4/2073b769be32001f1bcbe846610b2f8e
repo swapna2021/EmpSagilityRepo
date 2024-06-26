@@ -1,0 +1,11 @@
+package com.sagility.service;
+
+import java.util.List;
+
+import com.sagility.entities.Employee;
+
+public interface EmpServiceInterface {
+	
+	public List<Employee> getAllEmployees();
+
+}

@@ -1,0 +1,38 @@
+package com.sagility;
+
+public class Calculator implements CalculatorInterface {
+
+	public static void main(String[] args) {
+		Calculator cal=new Calculator();
+		System.out.println(cal.add(6,7));
+		System.out.println(cal.sub(6,7));
+		System.out.println(cal.mul(6,7));
+		System.out.println(cal.div(16,7));
+		
+	}
+
+	@Override
+	public int add(int a, int b) {
+		
+		return a+b;
+	}
+
+	@Override
+	public int sub(int a, int b) {
+		
+		return a-b;
+	}
+
+	@Override
+	public int mul(int a, int b) {
+		
+		return a*b;
+	}
+
+	@Override
+	public float div(int a, int b) {
+		
+		return ((float)(a)/b);
+	}
+
+}

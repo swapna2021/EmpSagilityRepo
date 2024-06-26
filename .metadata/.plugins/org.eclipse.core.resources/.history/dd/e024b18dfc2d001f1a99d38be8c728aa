@@ -1,0 +1,13 @@
+package com.sagility;
+
+public interface Interface1 {
+	
+	public void sayHello();
+	
+	String name="Swapna";
+	public void printName();
+	
+	public void printNums(int num);
+	
+
+}

@@ -1,0 +1,45 @@
+package com.sagility.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sagility.entities.Employee;
+import com.sagility.repository.EmpRepository;
+
+@Service
+public class EmpService implements EmpServiceInterface{
+
+	@Autowired
+	EmpRepository repository;
+	
+	@Override
+	public List<Employee> getAllEmployees() {
+		return repository.findAll();
+	}
+
+	public Employee saveEmployee(Employee employee) {
+		
+		return repository.save(employee);
+	}
+
+	public Employee getEmployeeById(int id) {
+		return repository.findById(id).get();
+	}
+
+	public Employee updateEmployee(int id, Employee updateEmp) {
+		
+		Employee curEmp=repository.findById(id).get();
+		if(curEmp!=null)
+		{
+			curEmp.setEmpName(updateEmp.getEmpName());
+			curEmp.setEmpSal(updateEmp.getEmpSal());
+			curEmp.setMobile(updateEmp.getMobile());
+			curEmp.setEmail(updateEmp.getEmail());
+			return repository.save(curEmp);
+		}
+		return null;
+	}
+
+}

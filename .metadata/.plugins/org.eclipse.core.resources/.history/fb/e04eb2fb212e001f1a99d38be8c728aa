@@ -1,0 +1,45 @@
+package com.sagility;
+
+import java.util.ArrayList;
+
+public class CustomerStream {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Customer> clist=new ArrayList<Customer>();
+		Customer c1=new Customer("swapna",123,"hyderabad");
+		Customer c2=new Customer("swathi",124,"Chennai");
+		Customer c3=new Customer("Preethi",223,"Delhi");
+		Customer c4=new Customer("Mona",13,"hyderabad");
+		Customer c5=new Customer("Priya",113,"hyderabad");
+		Customer c7=new Customer("swathi",124,"Chennai");
+		Customer c8=new Customer("Preethi",223,"Delhi");
+		Customer c9=new Customer("sona",13,"hyderabad");
+		Customer c10=new Customer("sriya",113,"hyderabad");
+		Customer c11=new Customer("swathi",124,"Chennai");
+		Customer c12=new Customer("Preethi",223,"Delhi");
+		Customer c13=new Customer("Monali",13,"hyderabad");
+		Customer c14=new Customer("Priyadharshi",113,"hyderabad");
+		clist.add(c1);
+		clist.add(c2);
+		clist.add(c3);
+		clist.add(c4);
+		clist.add(c5);
+		clist.add(c14);
+		clist.add(c7);
+		clist.add(c8);
+		clist.add(c9);
+		clist.add(c10);
+		clist.add(c11);
+		clist.add(c12);
+		clist.add(c13);
+		clist.add(c14);
+	
+		
+		clist.stream()
+		.filter(c->c.getCity().equals("hyderabad"))
+		.forEach(c->System.out.println(c));
+
+	}
+
+}

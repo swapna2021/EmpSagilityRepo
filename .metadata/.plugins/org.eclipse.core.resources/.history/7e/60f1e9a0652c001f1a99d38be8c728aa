@@ -1,0 +1,23 @@
+package com.sagility;
+
+import java.util.Date;
+
+public class Customer extends User {
+	
+	Date orderDate;
+
+	@Override
+	public void printDetails() {
+		
+		
+	}
+
+	@Override
+	public void acceptDetails() {
+		name=
+		
+	}
+	
+	
+
+}

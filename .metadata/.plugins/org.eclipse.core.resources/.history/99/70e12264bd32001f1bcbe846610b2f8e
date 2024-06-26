@@ -1,0 +1,32 @@
+package com.sagility.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+@Table(name="SwapnaEmp")
+public class Employee {
+	
+	@Column(name="name")
+	private String empName;
+	@Id
+	private int empId;
+	private double empSal;
+	private String mobile;
+	private String email;
+	
+
+}

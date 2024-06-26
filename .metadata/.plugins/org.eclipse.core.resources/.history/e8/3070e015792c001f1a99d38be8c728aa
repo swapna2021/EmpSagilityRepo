@@ -1,0 +1,28 @@
+package com.sagility;
+//final class can not be extended
+public  class FinalClass {
+	
+	private String name;
+	private int id;
+	public FinalClass() {
+		super();
+	}
+	public FinalClass(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "FinalClass [name=" + name + ", id=" + id + "]";
+	}
+	
+	public final void printDetails() {
+		
+		System.out.println(name+" "+id);
+		
+	}
+	
+	
+
+}

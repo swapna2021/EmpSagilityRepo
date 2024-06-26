@@ -1,0 +1,9 @@
+package com.sagility.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sagility.entities.Department;
+
+public interface DeptRepository extends JpaRepository<Department, Integer> {
+
+}

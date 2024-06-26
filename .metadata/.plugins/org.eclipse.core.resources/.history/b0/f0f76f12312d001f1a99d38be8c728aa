@@ -1,0 +1,15 @@
+package com.sagility;
+
+public class Main {
+
+	public static void main(String[] args) throws AgeNotSufficientException {
+		
+		Person p1=new Person("Swapna","999999999",25);
+		
+		if(p1.getAge()<18)
+			throw new AgeNotSufficientException("Not eligible");
+		
+
+	}
+
+}

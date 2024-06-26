@@ -1,0 +1,25 @@
+package com.sagility;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
+public class DemoOnStreams {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> alist=new ArrayList<Integer>();
+		alist.add(67);
+		alist.add(62);
+		alist.add(25);
+		alist.add(23);
+		alist.add(88);
+		alist.add(42);
+		
+		Predicate<Integer> p=(num)->num%2==0;
+				
+		
+		
+		alist.stream().filter(p).forEach(n->System.out.println(n));
+
+	}
+
+}

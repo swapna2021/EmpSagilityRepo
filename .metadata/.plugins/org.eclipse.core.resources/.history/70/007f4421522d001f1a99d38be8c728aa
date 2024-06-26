@@ -1,0 +1,18 @@
+package com.sagility;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class DemoOnArraysClass {
+
+	public static void main(String[] args) {
+		
+		int arr[]= {45,34,78,90,12,22,44};
+		List<int[]> list=Arrays.asList(arr);
+		for(int[] i:list)
+			System.out.println(i);
+		
+		
+	}
+
+}

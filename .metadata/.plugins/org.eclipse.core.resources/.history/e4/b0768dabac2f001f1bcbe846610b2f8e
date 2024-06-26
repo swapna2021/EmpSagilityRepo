@@ -1,0 +1,9 @@
+package com.sagility.bean;
+
+public class Hello {
+	
+	public String sayHello() {
+		return "Hello....!";
+	}
+
+}

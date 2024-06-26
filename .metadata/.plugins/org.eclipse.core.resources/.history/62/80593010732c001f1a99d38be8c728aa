@@ -1,0 +1,11 @@
+package com.sagility;
+
+public class OuterClass {
+	
+	private String name;
+	
+	class InnerClass{
+		
+	}
+
+}

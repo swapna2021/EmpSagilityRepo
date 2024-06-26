@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		<bean name="cust" class="springcoreprj.SpringCorePrj.Customer">
+			<constructor-arg name="name" value="Swapna"></constructor-arg>
+			<constructor-arg name="id" value="123"></constructor-arg>
+			<constructor-arg name="mobile" value="6282614948"></constructor-arg>
+			
+		</bean>
+		
+		<bean name="ord" class="springcoreprj.SpringCorePrj.Order">
+			<constructor-arg name="orderId" value="2345"></constructor-arg>
+			<constructor-arg name="orderDate" value="21/06/24"></constructor-arg>
+			<constructor-arg name="customer" ref="cust"></constructor-arg>
+			<constructor-arg name="itemList">
+				<list>
+					<value>Mobile</value>
+					<value>Laptop</value>
+					<value>Bottle</value>
+					<value>Bag</value>
+				</list>
+			</constructor-arg>
+		
+		</bean>
+		
+
+</beans>

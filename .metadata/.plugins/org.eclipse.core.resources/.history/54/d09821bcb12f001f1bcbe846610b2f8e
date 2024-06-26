@@ -1,0 +1,25 @@
+package com.sagility.bean;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Hello {
+	
+	public String sayHello() {
+		return "Hello....!";
+	}
+	
+	
+	public void init() {
+		System.out.println("Bean initialised");
+	}
+	
+	
+	public void destroy() {
+		System.out.println("Bean got removed");
+	}
+	
+	
+	
+
+}

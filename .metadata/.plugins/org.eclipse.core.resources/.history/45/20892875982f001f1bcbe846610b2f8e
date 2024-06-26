@@ -1,0 +1,11 @@
+package springcoreprj.SpringCorePrj;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration//configuratio inf will be there
+public class EmpConfig {
+	
+	
+	
+
+}

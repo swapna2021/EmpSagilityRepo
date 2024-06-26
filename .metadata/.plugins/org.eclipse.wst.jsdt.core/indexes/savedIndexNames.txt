@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+/Users/swapnam/swapna/eclipse-workspace-sagility/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3987832687.index
+2785960249.index
+2452858265.index
+3698524909.index
+2919758994.index
+3371479974.index
+1763351078.index
+2492235705.index
+282033845.index
+2072872652.index

@@ -1,0 +1,25 @@
+package springcoreprj.SpringCorePrj;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+//        System.out.println( "Hello World!" );
+    	
+    	ApplicationContext context=new ClassPathXmlApplicationContext("hello-bean.xml");
+    	Hello h=(Hello) context.getBean("hello");
+    	System.out.println("using h bean instance"+h.sayHello());
+    	
+    	Hello h1=(Hello) context.getBean("hello");
+    	System.out.println("using h1 bean instance"+h1.sayHello());
+    	
+    	
+    }
+}

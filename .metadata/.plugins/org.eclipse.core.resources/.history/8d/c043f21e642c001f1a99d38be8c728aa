@@ -1,0 +1,13 @@
+package com.sagility;
+
+public abstract class User {
+	
+	String name;
+	int id;
+	
+	
+	public  abstract void printDetails() ;
+	
+	public abstract void acceptDetails() ;
+
+}

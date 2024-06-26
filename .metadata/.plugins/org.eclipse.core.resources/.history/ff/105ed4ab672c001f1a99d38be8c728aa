@@ -1,0 +1,15 @@
+package com.sagility;
+
+//abstract class do not containg instances
+//Usage is to extend
+public abstract class User {
+	
+	protected String name;
+	protected int id;
+	
+	
+	public  abstract void printDetails() ;
+	
+	public abstract void acceptDetails() ;
+
+}

@@ -1,0 +1,18 @@
+package com.sagility;
+
+public class DemoOnException {
+
+	public static void main(String[] args) {
+		
+		int a=5,b=0;
+		try {
+		System.out.println(a/b);
+		}
+		catch(ArithmeticException ae) {
+			ae.printStackTrace();
+		}
+		System.out.println("End of the main");
+
+	}
+
+}

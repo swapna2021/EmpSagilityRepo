@@ -1,0 +1,17 @@
+package com.sagility;
+
+public class DemoOnTernary {
+
+	public static void main(String[] args) {
+		
+		int a=5,b=6,c=8;
+		System.out.println(a>b?a:b);//max of two
+		//max of 3
+		
+		int d= ( a>b && a>c ) ? a :( b>c ? b :c);
+		System.out.println(d);
+		//max of 4
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package springcoreprj.SpringCorePrj;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration//configuratio inf will be there
+public class EmpConfig {
+	
+	
+	@Bean
+	public Employee getEmployee() {
+		
+		Address address=new Address("hyd", "telangana", "506009");
+		Employee e=new Employee("swapna",123,50000,address);
+		return e;	
+	}
+	
+
+}

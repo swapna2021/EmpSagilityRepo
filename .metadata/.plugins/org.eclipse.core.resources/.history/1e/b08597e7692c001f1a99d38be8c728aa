@@ -1,0 +1,14 @@
+package com.sagility;
+
+
+public  class StaticClass {
+	
+	public static void display() {
+		System.out.println("display method");
+	}
+	
+	static class  InnerClass{
+		
+	}
+
+}

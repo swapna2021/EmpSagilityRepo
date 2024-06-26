@@ -1,0 +1,9 @@
+package com.sagility;
+
+public class User {
+	
+	String name;
+	int id;
+	
+
+}

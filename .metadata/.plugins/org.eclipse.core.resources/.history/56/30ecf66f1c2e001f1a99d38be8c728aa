@@ -1,0 +1,47 @@
+package com.sagility;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+public class DemoOnStreams {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> alist=new ArrayList<Integer>();
+		alist.add(67);
+		alist.add(62);
+		alist.add(25);
+		alist.add(23);
+		alist.add(88);
+		alist.add(42);
+		alist.add(67);
+		alist.add(62);
+		alist.add(25);
+		alist.add(23);
+		alist.add(88);
+		alist.add(42);
+		alist.add(67);
+		alist.add(62);
+		alist.add(25);
+		alist.add(23);
+		alist.add(88);
+		alist.add(42);
+		
+		alist.stream()
+		.limit(10)
+		.filter((num)->num%2==0)
+		.map(n->n*n)
+		.collect(Collectors.toList());
+		
+		//create collection of strings ,find all the strings starting with s
+		
+		String s[]= {"swapna","amit","swathi","Raj","vikky"};
+		Arrays.asList(s).stream()
+		.filter(n->n.charAt(0)=='s')
+		.forEach(n->System.out.println(n));
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.sagility.controller;
+
+@Cont
+public class Hello {
+	
+	public String sayHello() {
+		return "Hello Swapna...!";
+	}
+
+}

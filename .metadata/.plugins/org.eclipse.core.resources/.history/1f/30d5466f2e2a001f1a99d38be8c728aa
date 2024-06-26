@@ -1,0 +1,12 @@
+package com.sagility;
+
+public class BankingApplication {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount sa=new SavingsAccount("ICICI", "Swapna ", 12345, 1234, "ICIC000069",70000);
+		
+		
+	}
+
+}
